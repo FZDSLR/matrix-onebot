@@ -37,9 +37,9 @@ async fn main() {
 fn set_panic_hook() {
     panic::set_hook(Box::new(|panic_info| {
         println!("{}", panic_info);
-        println!("Press Enter to continue...");
-        io::stdout().flush().unwrap();
-        let _ = io::stdin().read_line(&mut String::new()).unwrap();
+//        println!("Press Enter to continue...");
+//        io::stdout().flush().unwrap();
+//        let _ = io::stdin().read_line(&mut String::new()).unwrap();
     }));
 }
 
